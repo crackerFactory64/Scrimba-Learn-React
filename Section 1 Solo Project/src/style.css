@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
+:root {
+  --fs-body: 0.9rem;
+  --fs-title: 1.5rem;
+
+  --fw-body: 400;
+  --fw-title: 700;
+
+  --clr-bg-main: #1a1b21;
+  --clr-bg-footer: #161619;
+  --clr-font: #fff;
+  --clr-accent: #f3bf99;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  background-color: #23252c;
+  min-height: 100vh;
+  color: var(--clr-font);
+  font-family: "Inter", sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  border: 0;
+  background-color: #fff;
+  font-family: inherit;
+  display: block;
+}
+
+.container {
+  background-color: var(--clr-bg-main);
+  max-width: 317px;
+  border-radius: 10px;
+}
+
+.section--info {
+  text-align: center;
+}
+
+.info__pic {
+  width: 100%;
+  aspect-ratio: 1;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.info__content {
+  padding: 0 2em;
+}
+
+.info__title {
+  font-size: var(--fs-title);
+}
+
+.info__subheading {
+  color: var(--clr-accent);
+  font-size: var(--fs-body);
+  font-weight: var(--fw-body);
+  margin-bottom: 0.5em;
+  margin-top: 0.25em;
+}
+
+.info__buttons {
+  margin-top: 1em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.info__button {
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  width: 45%;
+}
+
+.info__button--variant {
+  background-color: #5093e2;
+  color: #fff;
+}
+
+.section--about,
+.section--interests {
+  padding: 0 2em;
+  font-size: var(--fs-body);
+  margin-block: 1em;
+}
+
+.section--about h2,
+.section--interests h2 {
+  margin-bottom: 0.5em;
+  font-size: var(--fs-title);
+}
+section p {
+  line-height: 1.5;
+  font-weight: var(--fw-body);
+}
+footer {
+  background-color: var(--clr-bg-footer);
+  padding: 1em;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.footer__ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding-left: 0;
+  gap: 2em;
+}
