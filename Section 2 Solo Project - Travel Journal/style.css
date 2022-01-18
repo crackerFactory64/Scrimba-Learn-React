@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Dongle:wght@400;700&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Dongle", sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  width: min(90vw, 800px);
+  margin: 0 auto;
+  padding-top: 2em;
+  font-size: 1.5rem;
+}
+
+.header {
+  background-color: lawngreen;
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  margin-bottom: 2em;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1em;
+}
+
+.card__img {
+  border-radius: 9px;
+  align-self: center;
+}
+
+.card__info {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.info__country {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.info__maps-link {
+  color: rgba(0, 0, 255, 0.66);
+}
+
+.card__date {
+  font-weight: 700;
+}
+
+@media (min-width: 600px) {
+  .card {
+    grid-template-columns: 30% auto;
+  }
+}
